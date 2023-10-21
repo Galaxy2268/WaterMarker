@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Watermarking - Result</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #b0e57c; /* (pale green) background color */
+        }
+        #file-label {
+            display: none;
+        }
+        #download-btn {
+            background-color: #77b3d4; /* Pale blue button color */
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: Arial, sans-serif; /* Use the same font for the button */
+            border: none;
+            cursor: pointer;
+        }
+        #download-btn:hover {
+            background-color: #66a3c4; /* Slightly darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Watermarked Successfully!</h1>
+    <a href="{{ url_for('download_image') }}" id="download-link">
+        <button id="download-btn">Download Watermarked Image</button>
+    </a>
+</body>
+</html>

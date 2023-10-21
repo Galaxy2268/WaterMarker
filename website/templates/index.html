@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Watermarking</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #b0e57c; /* (pale green) background color */
+        }
+        .upload-btn {
+            background-color: #77b3d4; /* Pale blue button color */
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: Arial, sans-serif; /* Use the same font for both buttons */
+            border: none;
+            cursor: pointer;
+        }
+        .upload-btn-orange {
+            background-color: #ffa500; /* Pale orange button color */
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: Arial, sans-serif; /* Use the same font for both buttons */
+            border: none;
+            cursor: pointer;
+        }
+        .upload-btn:hover, .upload-btn-orange:hover {
+            background-color: #66a3c4; /* Slightly darker blue/orange on hover */
+        }
+        #file-label {
+            display: none;
+        }
+        .button-spacing {
+            margin-right: 20px; /* Add space between buttons */
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Watermarker</h1>
+    <form method="post" action="/" enctype="multipart/form-data">
+        <label for="image" class="upload-btn button-spacing">
+            Choose a Picture
+        </label>
+        <input type="file" name="image" id="image" accept="image/*" style="display: none;" required>
+        <input type="submit" class="upload-btn-orange" value="Upload">
+    </form>
+</body>
+</html>
